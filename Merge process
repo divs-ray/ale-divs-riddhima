@@ -1,9 +1,9 @@
 Steps for merging the investment and morbidity file
 Challenge
-1. Data received in Stata format with value labels. In Stata value label assings a label to numeric values of a variable. While the values
-appear to be in "string" form, the data type for the variable is preserved as numeric. This helps in coding and reading the values.
+1. Data received in Stata format with value labels. In Stata, value label assigns a label to numeric values of a variable. While the values
+appear to be in "string" form, the data type for the variable is preserved as "numeric". This helps in coding and reading the values.
 
-In our dataset, state variable had value labels in investment file, and muni variable had value label in the morbidity file. Thus, when we were reading
+In our dataset, "state" variable had value labels in investment file, and "muni" variable had value labels in the morbidity file. Thus, when we were reading
 the stata file in python using pandas, the stata variable in investment data was read as string with its labels as values, and muni variable was read 
 has the same issue in the morbidity file.
 

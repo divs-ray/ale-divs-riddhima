@@ -1,9 +1,12 @@
 # IPPP Final Project - Regression Analysis
+### IMPACT of CCT Program on agricultural productivity variables ###
+# outcome vars are: ani1(owns farm animals), ani2(owns other animals), land(uses land)
+
 import pandas as pd
 import numpy as np
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
-#Impact of CCT Program on agricultural productivity variables  ani1(owns farm animals), ani2(owns other animals), land(uses land) 
+
 #read data
 inv_2 = pd.DataFrame(pd.read_stata("investments_data.dta", convert_categoricals=False))
 

@@ -67,5 +67,5 @@ for line in c:
     except:
         pass
 
-# Write the file as CSV
+# To write the file as CSV
 manu_data.to_csv("muni_manu_data.csv", sep=',', encoding='utf-8',index=False)

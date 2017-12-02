@@ -1,5 +1,5 @@
 # IPPP Final Project - Regression Analysis
-### IMPACT of CCT Program on agricultural productivity variables ###
+## IMPACT of CCT Program on agricultural productivity variables ###
 # outcome vars are: ani1(owns farm animals), ani2(owns other animals), land(uses land)
 
 import pandas as pd
@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 inv_1 = pd.DataFrame(pd.read_stata("investments_data.dta", convert_categoricals=False))
 muni_data=pd.DataFrame(pd.read_csv("muni_manu_data.csv"))
 
-##Merge inv_1 with muni data on st_muni and convert 1998 data into integer for regression
+#Merge inv_1 with muni data on st_muni and convert 1998 data into integer for regression
 #Create the st_muni variable in Investment data
 inv_1['st_muni']=(inv_1['state'].astype(str).str.cat(inv_1['muni'].astype(str).str.zfill(3)))
 inv_1['st_muni']=inv_1['st_muni'].astype(int)

@@ -22,15 +22,15 @@ Contains our codes for analysis along with results description. For reviewing ou
 
 C. Summary Statistics
 
-1. PanelA
+1. Panel1.py
 
 Contains codes for creating table of summary statistics for agricultural assets across treatment and control group. It also has codes for TTest for testing if the difference between control and treatment groups are statistically significant.
 
-2. PanelB
+2. Panel2.py
 
 Contains codes for creating table of summary statistics for Head of the household charateristics across treatment and control group. It also has codes for TTest for testing if the difference between control and treatment groups are statistically significant.
 
-3. Summary Plots
+3. Summary Plots.py
 
 Codes for boxplot for agricultural assets distribution
 

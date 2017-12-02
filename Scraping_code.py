@@ -5,8 +5,12 @@ from bs4 import BeautifulSoup as bs
 # Read the STATA dataset "investments_data" into pandas
 inv_2 = pd.DataFrame(pd.read_stata("investments_data.dta", convert_categoricals=False))
 
-#Create a new variable combining "state" and "muni" variables
-# in the format used by INEGI
+#In order to get the set of municipalities included in the experiment,
+#we recreated the INEGI codes from the data available in the investment data set
+
+# the codes are 5 digits (ex. 12004) where the first two digits are the state(12)
+# and the next three(004) are the municipality in that state
+
 inv_2['st_muni']=inv_2['state'].astype(str).str.cat(inv_2['muni'].astype(str).str.zfill(3))
 
 #Get all unique INEGI municipality codes

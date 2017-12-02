@@ -12,7 +12,7 @@ sns.set_context('notebook', font_scale=1.45, rc={"lines.linewidth": 3, "figure.f
 
 #Plotting first set of Dependent variables
 
-#renaming the columns
+#Renaming the columns
 inv_2.rename(columns={'ani197':'Drafts animals ownership', 'ani297':'Production animals ownership','land97':'Land use'}, inplace=True)
 
 #First set of dependent variables
